@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Secular+One&family=Source+Serif+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #222;
+  background: #ededed;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.loginPage {
+  display: flex;
+  background-color: white;
+  margin: 6% auto auto 16%;
+  width: 70%;
+  border-radius: 15px;
+}
+
+.loginForm {
+  width: 55%;
+}
+
+.loginImage {
+  width: 40%;
+}
+
+.formDetail i {
+  position: absolute;
+  opacity: 0.7;
+  padding: 15px;
+  padding-left: 3px;
+}
+
+#toggledPassword {
+  margin-left: -1.5%;
+  font-size: 18px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.formDetail .inputItems {
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 4% auto 10% auto;
+  position: relative;
+  width: 100%;
+  padding-right: 35px;
+  font-family: "Varela Round", sans-serif;
+  background: none;
+  outline: none;
+  padding-left: 26px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.logoImg {
+  width: 130px;
+  border-radius: 5px;
+}
+
+button.dropdown-toggle{
+  background: none;
+  color: white;
+  outline: none;
+  border: none;  
+}
+
+
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.4s
+}
+
+.nav-item:hover::after {
+  width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fec400
+}
+
+.nav-link {
+  padding: 8px 5px;
+  transition: 0.2s
+}
+
+.formDetail {
+  margin: 0 18%;
+}
+
+.heading {
+  margin: 16% auto 3% 35%;
+  display: flex;
+  display: inline-block;
+}
+
+.heading h4 {
+  font-size: 35px;
+  font-family: "Secular One", sans-serif;
+}
+
+.loginImg {
+  margin: 10% auto 10% 5%;
+}
+.form-check {
+  display: inline-block;
+  margin-top: 3%;
+  position: relative;
+}
+
+.forgot a {
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  position: relative;
+  bottom: 22px;
+  float: right;
+}
+
+.loginBtn {
+  margin-top: 9%;
+}
+
+.signUpLink a {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  margin: auto auto auto 18%;
+}
+
+.signUpLink a:hover {
+  color: blue;
+}
+
+.formDetail .inputItems:hover,
+.formDetail .inputItems:focus {
+  border-bottom: 2px solid green;
+  opacity: 0.7;
+}
+
+.loginImg > img {
+  margin: 14% 2% 5% 13%;
+}
+
+.forgot a:hover {
+  color: red;
+}
+.signUp > span {
+  margin-top: 5%;
+  display: block;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+@import "compass/css3";
+* {
+  box-sizing: border-box;
+}
+*:focus,
+*:active,
+*:focus:active {
+  outline: none;
+}
+
+.column {
+  float: left;
+  padding: 0 15px;
+  width: 50%;
+}
+.set {
+  text-align: center;
+  margin: 3% auto 10% auto;
+}
+.icon-rise a {
+  overflow: visible;
+  transition: all 0.3s ease-in;
+}
+.icon-rise a:hover {
+  transform: translateY(-8px);
+}
+a.social {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 10px;
+  overflow: hidden;
+  position: relative;
+  text-indent: -9999em;
+  visibility: hidden;
+  width: 40px;
+}
+a.social:before,
+a.social:after {
+  color: #fff;
+  content: "";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 30px;
+  height: 40px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-indent: 0;
+  visibility: visible;
+  width: 40px;
+}
+a.social:after {
+  left: 0;
+  position: absolute;
+}
+a.facebook:before {
+  background: #3b5998;
+}
+a.facebook:after {
+  content: "\f09a";
+  top: -1px;
+}
+a.twitter:before {
+  background: #00aced;
+}
+a.twitter:after {
+  content: "\f099";
+  left: 0;
+  top: 0;
+}
+a.google-plus:before {
+  background: #ff4b39;
+}
+a.google-plus:after {
+  content: "\f0d5";
+  left: 2px;
+  top: -1px;
+}
+a.pinterest:before {
+  background: #cc2127;
+}
+a.pinterest:after {
+  content: "\f0d2";
+  font-size: 34px;
+  left: -1px;
+  top: -1px;
+}
+a.instagram:before {
+  background: #784cac;
+}
+a.instagram:after {
+  content: "\f16d";
+  top: -1px;
+}
+a.linked-in:before {
+  background: #007bb6;
+}
+a.linked-in:after {
+  content: "\f0e1";
+  top: -1px;
+}
+.squared a.social:before {
+  border-radius: 0;
+}
+.rounded a.social:before {
+  border-radius: 50%;
+}
+.loginInput input:hover,
+.loginInput input:focus,
+.loginInput input:active {
+  border-bottom: 2px solid red;
+}
+
+/* media querie for mobile */
+@media screen and (max-width: 490px) {
+  .loginPage {
+    flex-direction: column-reverse;
+    margin: 10% auto 10% auto;
+    width: 95%;
+  }
+
+  .heading {
+    margin: 10% auto 3% 35%;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .loginForm {
+    width: 100%;
+  }
+
+  .formDetail {
+    margin: 2% 3% 4% 5%;
+    position: relative;
+    width: 85%;
+  }
+
+  .signUpLink > a {
+    margin: auto auto 20% 57%;
+    display: inline-block;
+    font-size: 19px;
+    /* bottom: 15px; */
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .tags {
+    display: flex;
+  }
+
+  .signUpLink {
+    display: flex;
+  }
+
+  .fa-sign-in {
+    margin: 4%;
+  }
+
+  #toggledPassword {
+    top: 30.5%;
+    margin-left: -9%;
+  }
+
+  .formDetail .inputItems {
+    position: relative;
+  }
+}
+
+/* media querie for fold mobile view port */
+@media screen and (min-width: 200px) and (max-width: 280px) {
+  .loginPage {
+    margin: 10% auto 10% auto;
+    width: 95%;
+  }
+
+  .loginPage {
+    margin: 4% auto 4% auto;
+    width: 96%;
+  }
+
+  .loginImg img {
+    margin: auto 5% auto 30%;
+    position: relative;
+    width: 200px;
+  }
+
+  .formDetail i {
+    padding: 12px;
+    padding-left: 3px;
+  }
+
+  .signUpLink > a {
+    margin: auto auto 10% 30%;
+  }
+
+  #toggledPassword {
+    top: 26.5%;
+    margin-left: -10%;
+  }
+
+  .forgot a{
+    bottom: 10px;
+  }
+
+  .fa-sign-in {
+    left: 43%;
+  }
+}
+
+/* media querie for tablets */
+@media screen and (min-width: 500px) and (max-width: 1020px) {
+  .loginPage {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 8% auto 4% 0%;
+  }
+  .loginForm {
+    width: 100%;
+  }
+
+  .heading {
+    margin: 5% auto 3% 39%;
+  }
+
+  .heading h4 {
+    font-size: 55px;
+  }
+
+  .formDetail {
+    margin: 2% auto 4% 12%;
+    width: 75%;
+    position: relative;
+    font-size: 25px;
+  }
+
+  #toggledPassword {
+    top: 30%;
+    right: 1%;
+    font-size: 28px;
+  }
+
+  .formDetail i {
+    padding: 24px;
+    padding-left: 3px;
+  }
+
+  .loginImg > img {
+    margin: 2% auto 10% 61%;
+    width: 350px;
+  }
+
+  .signUpLink {
+    width: 100%;
+    margin: auto auto 15% 70%;
+    white-space: nowrap;
+  }
+
+  .signUpLink a {
+    font-size: 25px;
+  }
+
+  .signUp > span {
+    font-size: 25px;
+  }
+
+  .set {
+    margin: 4% auto 6% auto;
+  }
+
+  .formDetail .inputItems {
+    padding-left: 36px;
+    position: relative;
+  }
+}

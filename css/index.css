@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(239 239 239);
+}
+
+.searchHeading {
+  width: 100%;
+  overflow: hidden;
+}
+
+.heading h2 span {
+  color: green;
+}
+.heading h2 {
+  font-family: "Secular One", sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 10%;
+  /* letter-spacing: 1.2px; */
+}
+.heading strong {
+  font-family: "Bree Serif", serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.searchInput {
+  background-color: white;
+  position: relative;
+  width: 70%;
+  height: 9vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.logoImg {
+  width: 130px;
+  border-radius: 5px;
+}
+
+.searchInput input {
+  outline: none;
+  width: 20vw;
+  background: none;
+  padding-left: 2.5rem;
+  font-family: "Varela Round", sans-serif;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: none;
+  margin: 6% auto 7% 7%;
+}
+
+button.dropdown-toggle{
+  background: none;
+  color: white;
+  outline: none;
+  border: none;  
+}
+
+
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #fec400;
+  transition: 0.4s
+}
+
+.nav-item:hover::after {
+  width: 100%
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fec400
+}
+
+.nav-link {
+  padding: 8px 5px;
+  transition: 0.2s
+}
+.jobSearchInput input {
+  padding-left: 13%;
+}
+#searchIcon {
+  position: absolute;
+  padding: 2.1% 1% 1.5% 3%;
+  font-size: 19px;
+  opacity: 0.3;
+}
+
+#locationIcon {
+  position: absolute;
+  padding: 2.1% 1% 1.5% 3%;
+  font-size: 19px;
+  opacity: 0.3;
+}
+#expIcon {
+  position: absolute;
+  padding: 2.1% 1% 1.5% 3%;
+  font-size: 19px;
+  opacity: 0.3;
+}
+.vr {
+  height: 5vh;
+}
+
+.searchBtn button {
+  border: none;
+  width: 100px;
+  color: white;
+  background: rgb(6, 152, 243);
+  border-radius: 50px;
+  font-size: 18px;
+  position: relative;
+  padding: 12px;
+}
+
+.heading::before {
+  content: "";
+  background-color: rgb(227 227 227);
+  position: absolute;
+  width: 100%;
+  height: 54vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.topCompany {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.company img {
+  width: 150px;
+  margin: 25px;
+}
+
+.companyHeading h2 {
+  font-family: "Questrial", sans-serif;
+  margin-top: 4%;
+  font-weight: 600;
+}
+
+/* section cat */
+.feature-item {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  color: black;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 10px;
+  display: block;
+  font-family: "Varela Round", sans-serif;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.feature-item .icon {
+  font-size: 40px;
+  margin-bottom: 0px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.catIcon {
+  border-radius: 80px;
+  width: 75px;
+}
+
+.feature-item:hover {
+  /* background: rgb(141, 230, 141); */
+  /* color: #ffffff; */
+  box-shadow: none;
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  -o-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
+}
+
+.section-heading h2 {
+  position: relative;
+  text-decoration: none;
+}
+
+.section-heading h2:after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -15px;
+
+  /****** 
+       optional values below 
+       ******/
+
+  /* center - (optional) use with adjusting width   */
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 30%;
+  background: green;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* optional hover classes used with anmiation */
+.section-heading h2:hover:after {
+  width: 45%;
+  background: black;
+}
+
+.headingLayer2 {
+  position: relative;
+  text-decoration: none;
+}
+
+.headingLayer2:after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 15%;
+  margin: 0 auto;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  background: green;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.headingLayer2:hover:after {
+  width: 20%;
+  background: black;
+}
+
+
+/* footer css */
+.footer-section ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 25vw;
+  border-radius: 5px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg {
+  background: #3b5998;
+}
+.twitter-bg {
+  background: #55acee;
+}
+.google-bg {
+  background: #dd4b39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2e2e2e;
+  border: 1px solid #2e2e2e;
+  color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+.boxContainer{
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  height: 70vh;
+}
+
+.boxContainer::before{
+  content: "";
+  background: url(../img/office3.gif) no-repeat center center/cover;
+  /* background-color: lightgreen; */
+  opacity: 0.4;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.box{
+  width: 50vh;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  height: auto;
+
+}
+
+.boxContainer h2{
+  font-family: "Secular One", sans-serif;
+}
+
+.boxContainer strong{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.boxContainer p{
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-size: 17px;
+}
+
+
+span > img{
+  width: 8vw;
+  display: block;
+  margin: auto;
+  /* border-radius: 50px; */
+}
+
+/* testomonial css */
+.testomonial-container{
+  display: grid;
+  padding: 3rem;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+
+.testomonial-container > div{
+  box-shadow: 0px 12px 28px 0px rgba(140, 149, 159, 0.3);
+}
+
+.testomonial-container > div:hover{
+  box-shadow:none;
+}
+
+
+.testomonial-container .testBox{
+  padding: 2rem;
+  border: 2px solid 2px solid black;
+}
+
+ span.material-icons-sharp{
+  font-size: 40px;
+  padding: 1rem;
+  background: aquamarine;
+  margin-bottom: 1rem;
+border-radius: 50%;
+}
+
+.testBox h4{
+  font-size: 17px ;
+}
